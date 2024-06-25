@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+</head>
+<body>
+    <form>
+        <h2>create an account</h2>
+        <fieldset>
+            <legend>personal information</legend>
+        <ul>
+            <li>
+                <label for="fullname">Full name</label>
+                <input type="text" name="name" id="fullname" required>
+            </li>
+        </ul>
+        <!-- not that when a placeholder is used, a labell can be used, one must be chosen-->
+        <ul>            
+            <li><input type="email" name="email" id="email" required placeholder=" full name"></ul></li>
+        <ul>
+            <li><label for="dateOfBirth">Date of birth</label></li>
+            <li><input type="date" name="date" id="dateOfBirth"></li>
+        </ul>
+        <ul><label for="telephone">Telephone number</label></ul>
+            <input type="tel" name="phone" id="phone">
+        <ul>
+            <h3>Gender</h3>
+            <input type="radio" name="gender" id="male">
+            <label for="male">male</label>
+
+            <input type="radio" name="gender" id="female" checked>
+            <label for="female">female</label>
+        </ul>
+        <ul>
+            <li>
+                <h3>Marital status</h3>
+                <input type="radio" name="Marital" id="single">
+                <label for="single">single</label>
+                <input type="radio" name="Marital" id="married">
+                <label for="married">married</label>
+                <br>
+                <input type="radio" name="Marital" id="single">
+                <label for="single">single</label>
+                <input type="radio" name="Marital" id="single">
+                <label for="single">single</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>State of origin</h3>
+                 <select name="State">
+                    <option value="lg">Lagos</option>
+                    <option value="ab">Abuja</option>
+                    <option value="ib">Ibadan</option>
+                    <option value="lg">Lagos</option>
+                    <option value="lg">Lagos</option>
+                    <option value="lg">Lagos</option>
+                    <option value="lg">Lagos</option>
+                 </select>
+
+                 <h3>State of origin</h3>
+                 <select name="State">
+                    <optgroup label="southern"> 
+                    <option value="lg">Lagos</option>
+                    <option value="oy">Oyo</option>
+                    <option value="ib">Ibadan</option>
+                     </optgroup>
+
+                     <optgroup label="Northern">
+                    <option value="kd">Kaduna</option>
+                    <option value="kt">Katsina</option>
+                    <option value="kn" selected>Kano</option>
+                     </optgroup>
+                 </select>
+
+            </li>
+        </ul>
+        <ul></ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Information</legend>
+            <ul>
+                <li>
+                    <h3>Qualifications Obtained</h3>
+                    <label for="Bsc">bachelors degree</label>
+                    <input type="checkbox" name="edu" id="bsc">
+                    <label for="Masters">masters degree</label>
+                    <input type="checkbox" name="edu" id="bsc">
+                    <label for="Doctorate">Doctorate degree</label>
+                    <input type="checkbox" name="edu" id="bsc">
+                    <label for="SSCE">First school leaving</label>
+                    <input type="checkbox" name="edu" id="bsc">
+                </li>
+                <li>
+                    <label for="resume">upload resume</label>
+                    <input type="file" name="file" id="resume" accept=".pfd, ,mp4, .mp3">
+                </li>
+                <li>
+                    <label for="experience">years of professional experience</label>
+                    <input type="number" name="number" id="exp" min="3" max="10">
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox" id="acce" required>
+                    <label for="accept">accept our <a href="#">terms and conditions</a></label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
