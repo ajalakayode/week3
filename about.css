@@ -1,0 +1,125 @@
+#id001{
+    text-transform: uppercase;
+    padding: 52px;
+}
+
+/* th caret in the below target http anchor elements */
+a[href^=http]{
+    display: inline-flex;
+    background-color: aqua;
+    padding: 23px;
+}
+
+/* the below targets html */
+a[href$=html]{
+    display: inline-flex;
+    background-color: aqua;
+    padding: 15px;
+}
+
+/* the below targets all elements with html */
+a[href*=html]{
+    display: inline-flex;
+    background-color: aqua;
+    padding: 15px;
+}
+
+/* note that if class and values are same, the last action takes effect */
+li:first-of-type{
+    background-color: aqua;
+}
+
+/* note here that the ul is a senior that is the li is an element to ul */
+ul li:last-of-type{
+    background-color: aquamarine;
+}
+
+/* the below hits the value n which is second line cos only last and first are auto generated */
+li:nth-of-type(2){
+    background-color: aliceblue;
+}
+/* below targets the first but jumps 2 lines */
+li:nth-of-type(2n+1)
+
+/* this targets the 3rd line in the ul */
+ul: :nth-child(3)
+/* below means when the para is selected the colors happens */
+p::selecction{
+    background-color: brown;
+    color: white;
+}
+
+/* below means when the site that is anchoris visited, the colours happens */
+a:visited{
+    color: black;
+}
+
+/* the below means that when the anchor is hovered on, the color happens */
+a:hover{
+    color: antiquewhite;
+}
+
+
+/* below target the para with home */
+p.home{
+    background-color: aqua;
+}
+/* below is only targeting class home */
+.home{
+    background-color: aqua;
+}
+
+/* below targeta the home and school */
+.home.school{
+    background-color: bisque;
+}
+p{
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+*{
+    font-weight: lighter;
+    font-size: 30;
+}
+
+
+body section h2{
+    border-bottom: 5px solid blue;
+
+}
+
+body h2{
+    border-bottom: 5px solid blue;
+
+}
+    
+/* the next line is the highest form of heirachy sequencing cos all things are in the html doc */
+html article > div h2{
+    font-weight: normal;
+    border-bottom: 5px solid red;
+}
+h2 + p {
+    color: green;
+}
+
+h2 ~ p {
+    color: violet;
+}
+
+/* for next item the first paragraph wont be affected */
+p + p{
+    color: orange;
+}
+
+/* the next line will target all element adjacent to header 2 */
+h2 + *{
+    color: orange;
+}

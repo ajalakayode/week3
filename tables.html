@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD MENU</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            padding: 15px;
+            border: 20px solid red;
+            width: 60%;
+            margin: auto;
+        }
+
+        caption{
+            border: 10px solid blueviolet;
+            text-transform: capitalize;
+            font-size: medium;
+            padding-block: 20px;
+        }
+
+        table tr{
+            border: 5px solid red;
+
+        }
+
+        table th, table td{
+            border-inline: 15px double blue;
+            padding: 20px;
+        }
+
+        table th{
+            text-transform: capitalize;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>FOOD MENU</caption>  <br>
+        <!-- above line is just the main title of the table -->
+        <!-- (thead>tr>th*4)+(body>(tr>th+td*3)*5)+tfoot>tr>td -->
+        <!-- (thead>tr>th*4)+(body>(tr>th+td*3)*5)+tfoot>tr>td -->
+        <thead>
+            <tr>
+                <th scope="col">Days/Meal</th>
+                <th scope="col">Breakfast</th>
+                <th scope="col">Lunch</th>
+                <th scope="col">Dinner</th>
+            </tr>
+        </thead>
+        <body>
+            <tr>
+                <th scope="row">MONDAY</th>
+                <td>r</td>
+                <td>t</td>
+                <td>y</td>
+            </tr>
+            <tr>
+                <th scope="row">TUESDAY</th>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <th scope="row">WEDNESDAY</th>
+                <td>t</td>
+                <td>d</td>
+                <td>u</td>
+            </tr>
+            <tr>
+                <th scope="row">THURSDAY</th>
+                <td>g</td>
+                <td>d</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <th scope="row">FRIDAY</th>
+                <td>x</td>
+                <td>v</td>
+                <td>j</td>
+            </tr>
+        </body>
+        <tfoot>
+            <tr>
+                <td><b><em>To be reviewed weekly by the chief nutritionist</em></b></td>
+            </tr>
+        </tfoot> 
+
+
+
+
+    </table>
+</body>
+</html>
